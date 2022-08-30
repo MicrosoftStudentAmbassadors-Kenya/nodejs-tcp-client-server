@@ -1,0 +1,17 @@
+{
+  "name": "tcp-client-server",
+  "version": "1.0.0",
+  "description": "- This is a simple script, that uses the net lib, to create a TCP server. You can be able to plug in, send and listen to the server:",
+  "main": "tcp-server.js",
+  "scripts": {
+    "start-server": "nodemon tcp-server.js",
+    "start-client": "nodemon tcp-client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pm2": "^5.2.0",
+    "nodemon": "^1.18.4"
+  }
+}
