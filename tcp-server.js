@@ -1,7 +1,7 @@
 const net = require("net");
 
-var HOST = "127.0.0.1";
-var PORT = 6969;
+const HOST = "127.0.0.1";
+const PORT = 6969;
 
 // Create a TCP/IPC server instance, and chain the listen function to it
 // net
@@ -12,7 +12,7 @@ server.listen(PORT, HOST, () => {
   console.log("TCP Server listening on " + HOST + ":" + PORT);
 });
 
-let sockets = [];
+const sockets = [];
 
 server.on("connection", function (socket) {
   console.log("CONNECTED: " + socket.remoteAddress + ":" + socket.remotePort);
